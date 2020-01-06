@@ -1,0 +1,35 @@
+{{#partial "content"}}
+<body style="background-image:url('/images/spider.jpg');
+             background-repeat:no-repeat;
+             background-size: cover;font-family: 'Ibarra Real Nova', serif;font-size:25px" >
+
+    <div class="well" style="width:50%;text-align:center;margin-left:20%">
+      {{#if squads}}
+            {{#each squads }}
+             <p>Currents squads:</p>
+             <p>{{ name }} <a href="/squads/{{id}}">read more..</a></p>
+
+            {{/each}}
+        {{else}}
+         <p>Zero Squads Added !</p>
+        {{/if}}
+    </div>
+</body>
+<footer class="footer">
+         <p>Francis Kamala copyright 2020</p>
+        </footer>
+        <style>
+        .footer {
+           position: fixed;
+           left: 0;
+           bottom: 0;
+           width: 100%;
+           background-color: black;
+           color: white;
+           text-align: center;
+        }
+        </style>
+
+{{/partial}}
+
+{{> layout.hbs}}
