@@ -23,6 +23,7 @@ public class App {
     public static void main(String[] args) { //type “psvm + tab” to autocreate this
         port(getHerokuAssignedPort());
         staticFileLocation("/public");
+        String layout = "templates/layout.hbs";
 
 
         get("/heroes/delete", (req, res) -> {
