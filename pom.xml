@@ -71,7 +71,7 @@
           <!-- Change this to YOUR application name! -->
           <appName>kam-herosquad</appName>
           <processTypes>
-            <web>java -jar target/kam-herosquad-1.0-jar-with-dependencies.jar</web>
+            <web>java -jar target/HeroSquad-1.0-jar-with-dependencies.jar</web>
           </processTypes>
         </configuration>
       </plugin>
